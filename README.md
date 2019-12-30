@@ -4,9 +4,9 @@
 
 <h1>Hackathon Prep Lesson #1 - JSON Format</h1>
 <hr>
-Goal: using the example code Python "getApiData.py" do the following:
-
----->  1:) Update Code to format all fields into a comma separator list CSV file that can be opened in Google Sheets.
+<h1>Goal: Using the example code Python "getApiData.py" do the following:
+<br>
+----> Update Code to format all fields into a comma separator list CSV file that can be opened in Google Sheets.</H1>
 
 <h2>NOTE: You need to know how to install a python module requests with pip and some basic python print formatting tricks.  See references at end of document.
 </h2>
