@@ -1,6 +1,4 @@
-# hackathonprep2020
-
-# learntocode
+# Mini - Hackathon February 2020
 
 <h1>Learn to Code Python - Hackathon Prep Projects </h1>
 <hr>
