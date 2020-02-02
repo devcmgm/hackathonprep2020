@@ -9,8 +9,8 @@ import javax.persistence.Id;
 public class Person {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
-	private String firstname, lastname, email, phone, address;
+    long id;
+	private String firstname, lastname, email, phone;
 
 	public Person() {
 	}
@@ -56,11 +56,7 @@ public class Person {
 		this.phone = phone;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
+	public long getId() {
+		return id ;
 	}
 }
