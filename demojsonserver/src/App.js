@@ -15,18 +15,18 @@ class App extends Component {
   }
 
   async getText() {
-    const url = 'http://localhost:3001';
+    const url = 'https://data.montgomeryal.gov/resource/7wcg-q8pp.json';
     console.log(url);
     console.log(1);
     await new Promise(resolve => setTimeout(resolve, 3000)); // 3 sec
     console.log(2);
 
    fetch(url, {
-    }).then( response => response.text())
+    }).then( response => response.json())
     .then(responseText => {
       console.log(responseText)
       this.setState({ externalData: responseText } )
-    })
+      })
     .catch((error) => {
      return Promise.reject()
     });
@@ -45,9 +45,14 @@ class App extends Component {
     } else {
       return (
         <div>
-          <h1>My {this.state.externalData} </h1>
-          <p>
-            {this.state.externalData}
+          <h1>My </h1>
+          <div>
+    {this.state.externalData.map((item, index) => (
+        <p>{item.request_type},{item.create_date}!</p>
+    ))}
+    </div>
+          <p> 
+           TBD
           </p>
         </div>
 
